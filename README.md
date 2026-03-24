@@ -1,6 +1,6 @@
-# Frontend Mentor - Social links profile solution
+# Frontend Mentor - Product preview card component solution
 
-This is a solution to the [Social links profile challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- My solution URL: [Link](https://geo86.github.io/FM-challenge-3--social-links-profile/)
+- My solution URL: [Link](https://geo86.github.io//FM-Responsive-Design---Product-preview-card/)
 
 ## My process
 
