@@ -1,6 +1,6 @@
-# Frontend Mentor - Product preview card component solution
+# Frontend Mentor - Social links profile solution
 
-This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Social links profile challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -10,11 +10,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-  - [AI Collaboration](#ai-collaboration)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+
 
 
 ## Overview
@@ -23,17 +19,17 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 Users should be able to:
 
-- View the optimal layout depending on their device's screen size
-- See hover and focus states for interactive elements
-
+- See hover and focus states for all interactive elements on the page
 
 ### Screenshot
 
-![](./preview.png)
+![](./preview.jpg)
 
 ### Links
 
-- My solution URL: [Link](https://geo86.github.io/FM-Responsive-Design---Product-preview-card/)
+- My solution URL: [Link](https://geo86.github.io/FM-challenge-3--social-links-profile/)
+
+## My process
 
 ### Built with
 
@@ -41,4 +37,8 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
-# FM-Responsive-Design---Product-preview-card
+
+### What I learned
+
+- CSS text-wrap balance feature
+- Using the picture & source tags with the media attribute, instead of using media queries to display or not an image.
