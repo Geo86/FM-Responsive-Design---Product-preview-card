@@ -1,0 +1,122 @@
+@charset "UTF-8";
+/* RESET (simplifié et moderne) */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.6em;
+  text-wrap: balance;
+}
+
+img, picture {
+  max-width: 100%;
+  display: block;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* VARIABLES */
+/* GLOBAL */
+body {
+  font-size: 0.875rem;
+  font-family: "Montserrat", sans-serif;
+  background-color: hsl(30, 38%, 92%);
+  display: grid;
+  place-items: center;
+}
+
+/* CARD */
+.product-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 90%;
+  background: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  overflow: hidden;
+}
+@media (min-width: 37em) {
+  .product-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 650px;
+    gap: 0;
+  }
+}
+.product-card__content {
+  padding: 1rem 1.8rem 2rem 1.8rem;
+  gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (min-width: 37em) {
+  .product-card__content {
+    padding: 1.8rem;
+  }
+}
+.product-card__img picture, .product-card__img img {
+  height: 100%;
+  object-fit: cover;
+}
+.product-card__category {
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  color: hsl(228, 12%, 48%);
+  font-size: 0.75rem;
+}
+.product-card__title {
+  font-family: "Fraunces", serif;
+  font-size: 2.1rem;
+  color: hsl(212, 21%, 14%);
+  line-height: 1.2;
+}
+.product-card__description {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+}
+.product-card__price {
+  font-size: 2rem;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+}
+.product-card__price-old {
+  margin-left: 1rem;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+.product-card__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 0;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 10px;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.product-card__button:hover {
+  background-color: hsl(158, 42%, 18%);
+}
+
+/*# sourceMappingURL=styles.css.map */
