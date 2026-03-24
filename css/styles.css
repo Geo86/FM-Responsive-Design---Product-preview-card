@@ -62,14 +62,14 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-@media (min-width: 37em) {
-  .product-card__content {
-    padding: 1.8rem;
-  }
-}
 .product-card__img picture, .product-card__img img {
   height: 100%;
   object-fit: cover;
+}
+@media (min-width: 37em) {
+  .product-card__img picture, .product-card__img img {
+    border-radius: 10px 0 0 10px;
+  }
 }
 .product-card__category {
   text-transform: uppercase;
