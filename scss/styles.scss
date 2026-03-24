@@ -36,10 +36,19 @@ $white: hsl(0, 0%, 100%);
 $gray: hsl(228, 12%, 48%);
 $black: hsl(212, 21%, 14%);
 
-/* GLOBAL */
+// For basic text (0.875rem -> ~1rem)
+$fluid-body: clamp(0.875rem, 0.8rem + 0.3vw, 1rem);
 
+// For main titles (2.1rem -> ~2.5rem)
+// On utilise une croissance plus forte (2vw) car c'est l'élément visuel clé
+$fluid-title: clamp(1.8rem, 1.2rem + 3vw, 2.4rem);
+
+// For the prices (2rem -> 2.2rem)
+$fluid-price: clamp(1.8rem, 1.6rem + 1vw, 2.2rem);
+
+/* GLOBAL */
 body {
-  font-size: 0.875rem;
+  font-size: $fluid-body;
   font-family: "Montserrat", sans-serif;
   background-color: $secondary;
   display: grid;
@@ -47,93 +56,43 @@ body {
 }
 
 /* CARD */
-
 .product-card {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  max-width: 90%;
-  background: $white;
-  border-radius: 10px;
-  
-   @media (min-width: 37em){ //592px;
-        display:grid;
-        grid-template-columns: 1fr 1fr;
-        max-width: 650px;
-        gap: 0;
-    }
-    
-  &__content {
-    padding: 1rem 1.8rem 2rem 1.8rem;
-    gap: 1.5rem;
-    display:flex;
-    flex-direction: column;  
-    justify-content: space-between;
-  }
 
-   &__img{
-    picture, img{
-        height: 100%;
-        object-fit: cover;
-        @media (min-width: 37em){ border-radius: 10px 0 0 10px;}
-    }
-  }
-  
   &__category {
     text-transform: uppercase;
     letter-spacing: 0.3rem;
     color: $gray;
-    font-size: 0.75rem; 
+    //keep fixed sized, as it's simply a label
+    font-size: 0.7rem; 
   }
 
   &__title {
     font-family: "Fraunces", serif;
-    font-size: 2.1rem;
+    font-size: $fluid-title; // fluid title applied here
     color: $black;
-    line-height: 1.2;
-  }
+    line-height: 1.1;
 
   &__description {
-    font-size: 0.85rem;
+    font-size: $fluid-body;
     font-weight: 500;
     color: $gray;
+    line-height: 1.6;
   }
 
   &__price {
-    font-size: 2rem;
+    font-size: $fluid-price;
     font-family: "Fraunces", serif;
     font-weight: 700;
     color: $primary;
+    display: flex;
+    align-items: center; 
   }
 
   &__price-old {
-    margin-left: 1rem;
+    font-size: 0.875rem; //fix size for more contrast
+    margin-left: 1.5rem;
     color: $gray;
     text-decoration: line-through;
-  }
-
-  &__button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem; 
-    border: 0;
-    padding: 0.9rem;
-    border: none;
-    border-radius: 10px;
-    background-color: $primary;
-    color: $white;
-    font-weight: 600;
-    cursor: pointer;
-
-    transition: background-color 0.2s ease;
-
-    &:hover {
-      background-color: $primary-dark;
-    }
-
-    &:focus{
-      background:red;
-    }
+    font-family: "Montserrat", sans-serif; 
   }
 }
